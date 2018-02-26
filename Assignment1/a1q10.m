@@ -1,14 +1,11 @@
-
-%% not done
-%% clear
 clc
 clear all
 close all
+tf1=tf([1 -5+2i], 1);
+tf2=tf([1 -1i+6], 1);
+tf3=tf([1 0], 1);
+tf4=tf([1 -1], 1);
+tf5=tf([1 -1], 1);
+t=((tf1*tf2)/(tf3*tf4*tf5));
+pzmap(t)
 
-%% declare
-w = 10000000:100000000;
-num = (1i*w - 5 + 2*1i) .* (1i*w + 6 - 1i);
-
-
-%% plot
-plot(w, num);
