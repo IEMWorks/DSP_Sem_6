@@ -10,3 +10,4 @@ y = sin(2*pi*f*n);
 
 %% plot
 stem(n,y);
+grid on;

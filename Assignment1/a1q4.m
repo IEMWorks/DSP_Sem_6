@@ -9,4 +9,4 @@ x = cos(pi*n/3) + cos(3*pi*n/4);
 
 %% plot
 stem(n, x);
-
+grid on;

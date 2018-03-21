@@ -15,3 +15,4 @@ y3 = y1 .* y2;
 
 %% plot
 plot(t, y1, 'r', t, y2, 'g', t, y3, 'b');
+grid on;

@@ -10,4 +10,4 @@ d = [zeros(1,10) ones(1,1) zeros(1,10)];
 
 %% plot
 stem(n,d);
-
+grid on;

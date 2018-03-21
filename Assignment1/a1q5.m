@@ -10,7 +10,9 @@ k = 5;
 
 %% plot
 subplot(2,1,1);
-stem(-n, y)
+stem(-n, y);
+grid on;
 
 subplot(2,1,2);
-stem(n+k, y)
+stem(n+k, y);
+grid on;

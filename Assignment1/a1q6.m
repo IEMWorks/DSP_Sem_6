@@ -13,5 +13,8 @@ y2 = imag(x);
 %% plot
 subplot(2,1,1);
 stem(n,y1);
+grid on;
+
 subplot(2,1,2);
 stem(n,y2);
+grid on;
