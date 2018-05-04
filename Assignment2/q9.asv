@@ -1,7 +1,0 @@
-clc
-clear all
-close all
-syms z
-a=5;
-x=z/(z-exp(-a*));
-limit(x*(z-1)/z,z,1)

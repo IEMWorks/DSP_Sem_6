@@ -1,6 +1,9 @@
+%% clear
 clc
 clear all
 close all
+
+%% process
 n=0:1:99;
 f1=0.05;
 f2=0.03;
@@ -12,12 +15,12 @@ x3=(a*x1+b*x2);
 y1=filter([.5 -2 5],[1],a*x1);
 y2=filter([.5 -2 5],[1],b*x2);
 y3=filter([.5 -2 5],[1],x3);
-subplot(2,2,1);
-stem(n,y3);
-
 y4=y1+y2;
 y5=y4-y3;
 
+%% plot
+subplot(2,2,1);
+stem(n,y3);
 subplot(2,2,2);
 stem(n,y4);
 subplot(2,2,3);

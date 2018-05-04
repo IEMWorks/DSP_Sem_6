@@ -1,6 +1,9 @@
+%% clear
 clc 
 clear all
 close all
+
+%% process
 syms w n
 a=5;
 x1=(1/2).^n;
