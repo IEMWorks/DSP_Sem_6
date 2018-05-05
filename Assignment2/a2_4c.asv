@@ -1,0 +1,22 @@
+clc 
+clear all
+close all
+
+syms z n;
+
+a = 5;
+xz = z/(z-a)
+xn = iztrans(xz);
+xn = simplify(xn)
+
+% for a
+lhs = simplify(ztrans(a^n*xn))
+rhs = simplify(-z*diff(xz))
+
+% for b
+lhs = simplify(ztrans(n*xn))
+rhs = simplify(-z*diff(xz))
+
+% for c
+lhs = simplify(ztrans(n*xn))
+rhs = simplify(-z*diff(xz))
