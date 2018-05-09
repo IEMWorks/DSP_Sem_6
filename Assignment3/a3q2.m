@@ -10,10 +10,10 @@ x=1./(1-a*exp(-j*w));
 
 %% plot
 subplot(2,1,1);
-plot(w, abs(x));
+plot(w, abs(x),'m');
 title('magnitude');
+grid on;
 subplot(2,1,2);
-plot(w, angle(x));
+plot(w, angle(x),'m');
 title('phase');
-
-
+grid on;

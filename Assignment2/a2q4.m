@@ -1,7 +1,9 @@
+%% clear
 clc 
 clear all
 close all
 
+%% process
 syms z n;
 
 a = 5;

@@ -14,11 +14,16 @@ for k=1:N
     end
 end
 
+%% print
+y
+
 %% plot
 subplot(2,1,1);
-stem(n1,y);
+stem(n1,y,'m');
 title('manual');
+grid on;
 y2=fft(x,N);
 subplot(2,1,2);
-stem(n1,y2);
+stem(n1,y2,'m');
 title('fft');
+grid on;

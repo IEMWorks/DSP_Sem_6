@@ -18,8 +18,12 @@ for n=1:N
 end
 
 %% plot
-subplot(2,2,1)
-stem(ns,y);
+subplot(2,1,1);
+stem(ns,y,'m');
+title('manual');
+grid on;
 y2=ifft(x,N);
-subplot(2,2,2)
-stem(ns,y2)
+subplot(2,1,2);
+stem(ns,y2,'m');
+title('fft');
+grid on;

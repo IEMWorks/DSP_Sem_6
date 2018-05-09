@@ -16,9 +16,12 @@ end
 
 %% plot
 subplot(2,1,1);
-stem(n1,y);
+stem(n1,y,'m');
 title('manual');
+grid on;
+
 y1=fft(x,4);
 subplot(2,1,2);
-stem(n1,y1);
+stem(n1,y1,'m');
 title('fft');
+grid on;

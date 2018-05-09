@@ -1,6 +1,9 @@
+%% clear
 clc
 clear all
 close all
+
+%% process
 x = [-2 -3 1 2 3 4 5 6]; 
 lx=length(x);
 n1= -2:1:5;
@@ -17,10 +20,18 @@ for i=1:l3
         y(i)=y(i)+ x1(j)* h1(i-j+1);
     end
 end
+
+%% plot
 subplot(3,1,1);
 stem(n1,x);
+title('x');
+grid on;
 subplot(3,1,2);
 stem(n2,h);
+title('h');
+grid on;
 subplot(3,1,3);
 stem(n3,y);
+title('x*h');
+grid on;
 y
