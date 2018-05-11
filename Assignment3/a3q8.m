@@ -4,8 +4,8 @@ clear all
 close all
 
 %% process
-x=input('enter sequence x : ');
-h=input('enter sequence h : ');
+x=input('Enter sequence x : ');
+h=input('Enter sequence h : ');
 s=max(length(x),length(h));
 n=0:1:s-1;
 x=[zeros(1,(s-length(x))), x];
